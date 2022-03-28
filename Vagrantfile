@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "ubuntu/focal64"
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -49,10 +49,7 @@ Vagrant.configure(2) do |config|
       sudo apt-get -y install g++-mips-linux-gnu gdb-multiarch
 
       # QEMU run-time emulator
-      sudo apt-get -y install qemu
-
-      # Install dos2unix
-      sudo apt-get -y install dos2unix
+      sudo apt-get -y install qemu qemu-user
 
    SHELL
 end

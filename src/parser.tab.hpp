@@ -44,7 +44,7 @@
 extern int yydebug;
 #endif
 /* "%code requires" blocks.  */
-#line 12 "src/parser.y"
+#line 4 "src/parser.y"
 
 	#include <cassert>
 	#include <vector>
@@ -63,61 +63,61 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    T_LOGICAL_AND = 258,
-    T_LOGICAL_OR = 259,
-    T_RIGHT_SHIFT = 260,
-    T_LEFT_SHIFT = 261,
-    T_ASSIGN = 262,
-    T_INCREMENT = 263,
-    T_DECREMENT = 264,
-    T_ADD_ASSIGN = 265,
-    T_SUB_ASSIGN = 266,
-    T_MULTIPLY = 267,
-    T_DIVIDE = 268,
-    T_PLUS = 269,
-    T_MINUS = 270,
-    T_MODULO = 271,
-    T_LBRACKET = 272,
-    T_RBRACKET = 273,
-    T_SQUARE_LBRACKET = 274,
-    T_SQUARE_RBRACKET = 275,
-    T_CURLY_LBRACKET = 276,
-    T_CURLY_RBRACKET = 277,
-    T_COLON = 278,
-    T_SEMICOLON = 279,
-    T_COMMA = 280,
-    T_GREATER = 281,
-    T_GREATER_EQUAL = 282,
-    T_LESS = 283,
-    T_LESS_EQUAL = 284,
-    T_EQUAL = 285,
-    T_NOT_EQUAL = 286,
-    T_INT = 287,
-    T_VOID = 288,
-    T_CHAR = 289,
-    T_DOUBLE = 290,
-    T_FLOAT = 291,
-    T_UNSIGNED = 292,
-    T_SIZEOF = 293,
-    T_IF = 294,
-    T_ELSE = 295,
-    T_SWITCH = 296,
-    T_WHILE = 297,
-    T_FOR = 298,
-    T_CONTINUE = 299,
-    T_BREAK = 300,
-    T_RETURN = 301,
-    T_DEFAULT = 302,
-    T_CASE = 303,
-    T_IDENTIFIER = 304,
-    T_INT_CONSTANT = 305,
-    T_FLOAT_CONSTANT = 306,
-    T_DOUBLE_CONSTANT = 307,
-    T_UNSIGNED_CONSTANT = 308,
-    T_BITWISE_AND = 309,
-    T_BITWISE_OR = 310,
-    T_BITWISE_XOR = 311,
-    T_ENUM = 312
+    T_SIZEOF = 258,
+    T_ENUM = 259,
+    T_LOGICAL_AND = 260,
+    T_LOGICAL_OR = 261,
+    T_RIGHT_SHIFT = 262,
+    T_LEFT_SHIFT = 263,
+    T_ASSIGN = 264,
+    T_INCREMENT = 265,
+    T_DECREMENT = 266,
+    T_ADD_ASSIGN = 267,
+    T_SUB_ASSIGN = 268,
+    T_MULTIPLY = 269,
+    T_DIVIDE = 270,
+    T_PLUS = 271,
+    T_MINUS = 272,
+    T_MODULO = 273,
+    T_LBRACKET = 274,
+    T_RBRACKET = 275,
+    T_SQUARE_LBRACKET = 276,
+    T_SQUARE_RBRACKET = 277,
+    T_CURLY_LBRACKET = 278,
+    T_CURLY_RBRACKET = 279,
+    T_COLON = 280,
+    T_SEMICOLON = 281,
+    T_COMMA = 282,
+    T_GREATER = 283,
+    T_GREATER_EQUAL = 284,
+    T_LESS = 285,
+    T_LESS_EQUAL = 286,
+    T_EQUAL = 287,
+    T_NOT_EQUAL = 288,
+    T_IF = 289,
+    T_ELSE = 290,
+    T_SWITCH = 291,
+    T_WHILE = 292,
+    T_FOR = 293,
+    T_CONTINUE = 294,
+    T_BREAK = 295,
+    T_RETURN = 296,
+    T_DEFAULT = 297,
+    T_CASE = 298,
+    T_INT = 299,
+    T_VOID = 300,
+    T_CHAR = 301,
+    T_DOUBLE = 302,
+    T_FLOAT = 303,
+    T_UNSIGNED = 304,
+    T_IDENTIFIER = 305,
+    T_INT_CONSTANT = 306,
+    T_FLOAT_CONSTANT = 307,
+    T_DOUBLE_CONSTANT = 308,
+    T_UNSIGNED_CONSTANT = 309,
+    T_BITWISE_AND = 310,
+    T_BITWISE_OR = 311,
+    T_BITWISE_XOR = 312
   };
 #endif
 
@@ -125,7 +125,7 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 25 "src/parser.y"
+#line 17 "src/parser.y"
 
 	const Node 		*node;
 	Declarator 		*declarator_node;
@@ -133,7 +133,7 @@ union YYSTYPE
 	Statement 		*statement_node;
 	Expression 		*expression_node;
 	std::string 	*string;
-	type_definition *type_node;
+	type_def *type_node;
 	int 			int_num;
 	unsigned int 	unsigned_num;
 	float			float_num;
